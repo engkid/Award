@@ -9,21 +9,46 @@
 /* Begin PBXBuildFile section */
 		1E470D6B237980F7009BC075 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E470D6A237980F7009BC075 /* AppDelegate.swift */; };
 		1E470D6D237980F7009BC075 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E470D6C237980F7009BC075 /* SceneDelegate.swift */; };
-		1E470D6F237980F7009BC075 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E470D6E237980F7009BC075 /* ViewController.swift */; };
-		1E470D72237980F7009BC075 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1E470D70237980F7009BC075 /* Main.storyboard */; };
 		1E470D74237980F8009BC075 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1E470D73237980F8009BC075 /* Assets.xcassets */; };
 		1E470D77237980F8009BC075 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1E470D75237980F8009BC075 /* LaunchScreen.storyboard */; };
+		1E470D8023798750009BC075 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E470D7E23798750009BC075 /* LoginViewController.swift */; };
+		1E470D8123798750009BC075 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1E470D7F23798750009BC075 /* LoginViewController.xib */; };
+		1E470D8523798F05009BC075 /* UIView+Constraints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E470D8423798F05009BC075 /* UIView+Constraints.swift */; };
+		1E470D89237996F2009BC075 /* SDWebImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E470D87237996F2009BC075 /* SDWebImage.framework */; };
+		1E470D8A237996F2009BC075 /* SDWebImage.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1E470D87237996F2009BC075 /* SDWebImage.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		1E470D8B237996F2009BC075 /* SDWebImageMapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E470D88237996F2009BC075 /* SDWebImageMapKit.framework */; };
+		1E470D8C237996F2009BC075 /* SDWebImageMapKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1E470D88237996F2009BC075 /* SDWebImageMapKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		1E470D932379A2F7009BC075 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E470D922379A2F7009BC075 /* LoginViewModel.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		1E470D8D237996F2009BC075 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				1E470D8C237996F2009BC075 /* SDWebImageMapKit.framework in Embed Frameworks */,
+				1E470D8A237996F2009BC075 /* SDWebImage.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		1E470D67237980F7009BC075 /* Awards.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Awards.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1E470D6A237980F7009BC075 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1E470D6C237980F7009BC075 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		1E470D6E237980F7009BC075 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		1E470D71237980F7009BC075 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1E470D73237980F8009BC075 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1E470D76237980F8009BC075 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1E470D78237980F8009BC075 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1E470D7E23798750009BC075 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		1E470D7F23798750009BC075 /* LoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
+		1E470D8423798F05009BC075 /* UIView+Constraints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Constraints.swift"; sourceTree = "<group>"; };
+		1E470D87237996F2009BC075 /* SDWebImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SDWebImage.framework; path = Carthage/Build/iOS/SDWebImage.framework; sourceTree = "<group>"; };
+		1E470D88237996F2009BC075 /* SDWebImageMapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SDWebImageMapKit.framework; path = Carthage/Build/iOS/SDWebImageMapKit.framework; sourceTree = "<group>"; };
+		1E470D922379A2F7009BC075 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +56,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1E470D8B237996F2009BC075 /* SDWebImageMapKit.framework in Frameworks */,
+				1E470D89237996F2009BC075 /* SDWebImage.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +69,7 @@
 			children = (
 				1E470D69237980F7009BC075 /* Awards */,
 				1E470D68237980F7009BC075 /* Products */,
+				1E470D86237996F2009BC075 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,15 +84,74 @@
 		1E470D69237980F7009BC075 /* Awards */ = {
 			isa = PBXGroup;
 			children = (
+				1E470D8323798EE0009BC075 /* Controllers */,
+				1E470D8223798ED8009BC075 /* Extensions */,
 				1E470D6A237980F7009BC075 /* AppDelegate.swift */,
 				1E470D6C237980F7009BC075 /* SceneDelegate.swift */,
-				1E470D6E237980F7009BC075 /* ViewController.swift */,
-				1E470D70237980F7009BC075 /* Main.storyboard */,
 				1E470D73237980F8009BC075 /* Assets.xcassets */,
 				1E470D75237980F8009BC075 /* LaunchScreen.storyboard */,
 				1E470D78237980F8009BC075 /* Info.plist */,
 			);
 			path = Awards;
+			sourceTree = "<group>";
+		};
+		1E470D8223798ED8009BC075 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				1E470D8423798F05009BC075 /* UIView+Constraints.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		1E470D8323798EE0009BC075 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				1E470D942379A719009BC075 /* Feeds */,
+				1E470D8F2379A2D2009BC075 /* Login */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		1E470D86237996F2009BC075 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1E470D87237996F2009BC075 /* SDWebImage.framework */,
+				1E470D88237996F2009BC075 /* SDWebImageMapKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		1E470D8F2379A2D2009BC075 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				1E470D912379A2E5009BC075 /* ViewModels */,
+				1E470D902379A2DC009BC075 /* Views */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		1E470D902379A2DC009BC075 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				1E470D7E23798750009BC075 /* LoginViewController.swift */,
+				1E470D7F23798750009BC075 /* LoginViewController.xib */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		1E470D912379A2E5009BC075 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				1E470D922379A2F7009BC075 /* LoginViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		1E470D942379A719009BC075 /* Feeds */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Feeds;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -77,6 +164,8 @@
 				1E470D63237980F7009BC075 /* Sources */,
 				1E470D64237980F7009BC075 /* Frameworks */,
 				1E470D65237980F7009BC075 /* Resources */,
+				1E470D8D237996F2009BC075 /* Embed Frameworks */,
+				1E470D8E23799707009BC075 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -127,34 +216,50 @@
 			files = (
 				1E470D77237980F8009BC075 /* LaunchScreen.storyboard in Resources */,
 				1E470D74237980F8009BC075 /* Assets.xcassets in Resources */,
-				1E470D72237980F7009BC075 /* Main.storyboard in Resources */,
+				1E470D8123798750009BC075 /* LoginViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1E470D8E23799707009BC075 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/SDWebImage.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/SDWebImageMapKit.framework",
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n/usr/local/bin/carthage copy-frameworks\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		1E470D63237980F7009BC075 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1E470D6F237980F7009BC075 /* ViewController.swift in Sources */,
+				1E470D8023798750009BC075 /* LoginViewController.swift in Sources */,
 				1E470D6B237980F7009BC075 /* AppDelegate.swift in Sources */,
 				1E470D6D237980F7009BC075 /* SceneDelegate.swift in Sources */,
+				1E470D932379A2F7009BC075 /* LoginViewModel.swift in Sources */,
+				1E470D8523798F05009BC075 /* UIView+Constraints.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		1E470D70237980F7009BC075 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				1E470D71237980F7009BC075 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		1E470D75237980F8009BC075 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -285,6 +390,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = Awards/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -302,6 +411,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = Awards/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

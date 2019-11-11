@@ -1,0 +1,39 @@
+{
+  "Mac" : [
+    {
+      "name" : "SDWebImageMapKit",
+      "hash" : "d6685a85c7c2818852f4ec7bfd48e2705553cb39005f4e6c1efee5d02c49a871"
+    },
+    {
+      "name" : "SDWebImage",
+      "hash" : "aca84c56ac1cfe55a285313cf14a348e70996c0662eaddcb66d24442fb4b8e13"
+    }
+  ],
+  "watchOS" : [
+    {
+      "name" : "SDWebImage",
+      "hash" : "7c5c162bb6176382708fdb434b8550be0353ab1e46c1c15136b630b5a1bc4aaa"
+    }
+  ],
+  "tvOS" : [
+    {
+      "name" : "SDWebImageMapKit",
+      "hash" : "aa124f96deb1209a06531aaef9d5c7ff994cc9227530082c2e3c8ce7713757e6"
+    },
+    {
+      "name" : "SDWebImage",
+      "hash" : "ea8e5f9956e2c9e70d283b4f7e4a2aa84f108eeff4fc0d020905886971031616"
+    }
+  ],
+  "commitish" : "5.3.1",
+  "iOS" : [
+    {
+      "name" : "SDWebImageMapKit",
+      "hash" : "5abba7eeab1e00dd3426af06627633dd69ee81ad7f648b9b76bba4d3ac09b729"
+    },
+    {
+      "name" : "SDWebImage",
+      "hash" : "3bdb3a808db04dbe556f00cc928b47095e67cd71cdb76a5e15d9603ab1b6ad7f"
+    }
+  ]
+}

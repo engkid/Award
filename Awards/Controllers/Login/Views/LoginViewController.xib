@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15509"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LoginViewController" customModule="Awards" customModuleProvider="target">
+            <connections>
+                <outlet property="TitleLabel" destination="VKx-PJ-lcW" id="S3S-qW-lnj"/>
+                <outlet property="containerView" destination="AQn-xl-WWE" id="xSG-La-xnq"/>
+                <outlet property="emailTextField" destination="7hR-Dx-Pak" id="fP4-s4-UCh"/>
+                <outlet property="logoImageView" destination="zH4-vQ-JAQ" id="37s-ej-aDL"/>
+                <outlet property="signInButton" destination="97T-BL-nz4" id="xdB-Bc-7Oh"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="whq-MV-bfp"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT" customClass="Login">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AQn-xl-WWE">
+                    <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="zH4-vQ-JAQ">
+                            <rect key="frame" x="85.5" y="205" width="243" height="167"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="zH4-vQ-JAQ" secondAttribute="height" multiplier="243:167" id="cZD-3H-QhB"/>
+                                <constraint firstAttribute="height" constant="167" id="l1x-Se-atp"/>
+                            </constraints>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VKx-PJ-lcW">
+                            <rect key="frame" x="118" y="400" width="178.5" height="58.5"/>
+                            <attributedString key="attributedText">
+                                <fragment content="AWARD">
+                                    <attributes>
+                                        <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <font key="NSFont" size="50" name="Arial-Black"/>
+                                        <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                            <tabStops>
+                                                <textTab alignment="left" location="28">
+                                                    <options/>
+                                                </textTab>
+                                                <textTab alignment="left" location="56">
+                                                    <options/>
+                                                </textTab>
+                                                <textTab alignment="left" location="84">
+                                                    <options/>
+                                                </textTab>
+                                                <textTab alignment="left" location="112">
+                                                    <options/>
+                                                </textTab>
+                                                <textTab alignment="left" location="140">
+                                                    <options/>
+                                                </textTab>
+                                                <textTab alignment="left" location="168">
+                                                    <options/>
+                                                </textTab>
+                                                <textTab alignment="left" location="196">
+                                                    <options/>
+                                                </textTab>
+                                                <textTab alignment="left" location="224">
+                                                    <options/>
+                                                </textTab>
+                                                <textTab alignment="left" location="252">
+                                                    <options/>
+                                                </textTab>
+                                                <textTab alignment="left" location="280">
+                                                    <options/>
+                                                </textTab>
+                                                <textTab alignment="left" location="308">
+                                                    <options/>
+                                                </textTab>
+                                                <textTab alignment="left" location="336">
+                                                    <options/>
+                                                </textTab>
+                                            </tabStops>
+                                        </paragraphStyle>
+                                    </attributes>
+                                </fragment>
+                            </attributedString>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email Address" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7hR-Dx-Pak">
+                            <rect key="frame" x="42" y="520.5" width="330" height="34"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="34" id="11i-xt-9Z2"/>
+                                <constraint firstAttribute="width" priority="999" constant="330" id="ISY-K9-Kfj"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="97T-BL-nz4">
+                            <rect key="frame" x="140" y="562.5" width="134" height="46"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="46" id="9ZH-Be-r2o"/>
+                                <constraint firstAttribute="width" constant="134" id="fgk-RW-sAu"/>
+                            </constraints>
+                            <state key="normal" title="Sign in"/>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter you email address to sign in and continue" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gxl-2V-9ko">
+                            <rect key="frame" x="108.5" y="456.5" width="197" height="56"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="56" id="smO-Hp-aw8"/>
+                                <constraint firstAttribute="width" constant="197" id="ySk-fg-J7G"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="7hR-Dx-Pak" secondAttribute="trailing" constant="42" id="3Wk-Bb-vzi"/>
+                        <constraint firstAttribute="bottom" relation="lessThanOrEqual" secondItem="97T-BL-nz4" secondAttribute="bottom" priority="998" constant="209.5" id="78Q-Q5-JT3"/>
+                        <constraint firstItem="zH4-vQ-JAQ" firstAttribute="top" relation="lessThanOrEqual" secondItem="AQn-xl-WWE" secondAttribute="top" priority="998" constant="205" id="CFD-BX-WX6"/>
+                        <constraint firstItem="VKx-PJ-lcW" firstAttribute="centerX" secondItem="zH4-vQ-JAQ" secondAttribute="centerX" id="HEU-69-uVK"/>
+                        <constraint firstItem="7hR-Dx-Pak" firstAttribute="top" secondItem="gxl-2V-9ko" secondAttribute="bottom" constant="8" id="IWF-pl-j6q"/>
+                        <constraint firstItem="7hR-Dx-Pak" firstAttribute="centerX" secondItem="gxl-2V-9ko" secondAttribute="centerX" id="Iwj-IH-5vF"/>
+                        <constraint firstItem="gxl-2V-9ko" firstAttribute="top" secondItem="VKx-PJ-lcW" secondAttribute="bottom" constant="-2" id="KAx-fR-kh0"/>
+                        <constraint firstItem="97T-BL-nz4" firstAttribute="top" secondItem="7hR-Dx-Pak" secondAttribute="bottom" constant="8" id="dAL-MA-etn"/>
+                        <constraint firstItem="7hR-Dx-Pak" firstAttribute="leading" secondItem="AQn-xl-WWE" secondAttribute="leading" constant="42" id="hsA-8K-blo"/>
+                        <constraint firstItem="zH4-vQ-JAQ" firstAttribute="centerX" secondItem="AQn-xl-WWE" secondAttribute="centerX" id="oyH-Z5-Nfq"/>
+                        <constraint firstItem="VKx-PJ-lcW" firstAttribute="top" secondItem="zH4-vQ-JAQ" secondAttribute="bottom" constant="28" id="px1-wB-aLL"/>
+                        <constraint firstItem="97T-BL-nz4" firstAttribute="centerX" secondItem="zH4-vQ-JAQ" secondAttribute="centerX" id="r0O-Xn-fWr"/>
+                        <constraint firstItem="7hR-Dx-Pak" firstAttribute="centerX" secondItem="zH4-vQ-JAQ" secondAttribute="centerX" id="rdU-bD-fzT"/>
+                        <constraint firstAttribute="height" relation="lessThanOrEqual" priority="999" constant="818" id="ugc-16-qFk"/>
+                        <constraint firstItem="gxl-2V-9ko" firstAttribute="centerX" secondItem="zH4-vQ-JAQ" secondAttribute="centerX" id="vRT-mI-Rhb"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="AQn-xl-WWE" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="O2d-Mp-qJe"/>
+                <constraint firstItem="AQn-xl-WWE" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="VHB-E8-rzZ"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="AQn-xl-WWE" secondAttribute="bottom" id="W8I-7u-nY2"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="AQn-xl-WWE" secondAttribute="trailing" id="oUL-SL-XdP"/>
+                <constraint firstItem="AQn-xl-WWE" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="oz5-iI-IEI"/>
+                <constraint firstItem="AQn-xl-WWE" firstAttribute="centerY" secondItem="fnl-2z-Ty3" secondAttribute="centerY" id="xU8-th-WZ8"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="137.68115942028987" y="107.8125"/>
+        </view>
+    </objects>
+</document>
