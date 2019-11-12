@@ -40,8 +40,7 @@ class LoginViewController: UIViewController {
 	
 	override func viewDidLoad() {
 		super.viewDidLoad()
-		// Do any additional setup after loading the view.
-		title = "Ecenk Korporesyen"
+		// Do any additional setup after loading the view.\
 		setupViews()
 		blurEffectView.frame = view.bounds
 		loadingIndicator.center = self.view.center
@@ -63,7 +62,21 @@ class LoginViewController: UIViewController {
 		fatalError("init(coder:) has not been implemented")
 	}
 	
+	override func viewWillAppear(_ animated: Bool) {
+		super.viewWillAppear(animated)
+		
+		self.navigationController?.setNavigationBarHidden(true, animated: true)
+	}
+	
+	override func viewWillDisappear(_ animated: Bool) {
+		super.viewWillDisappear(animated)
+		
+		self.navigationController?.setNavigationBarHidden(false, animated: true)
+	}
+	
 	private func setupViews() {
+		
+		
 		logoImageView?.image = UIImage(named: "star")
 		
 		signInButton?.backgroundColor = UIColor.black
@@ -94,9 +107,9 @@ class LoginViewController: UIViewController {
 		guard let emailAddress: String = emailTextField?.text else {
 			return
 		}
-		
+
 		if emailAddress.isEmpty {
-			
+
 		} else {
 			performLogin(with: emailAddress)
 		}
@@ -116,13 +129,24 @@ class LoginViewController: UIViewController {
 			strongSelf.hideLoading()
 			
 			if success {
+				
 				strongSelf.resetFields()
+				
+				strongSelf.navigateToFeeds()
+				
+				
 			} else {
 				// TODO Engkit: unhide error validation message here
 				strongSelf.resetFields()
 			}
 			
 		})
+	}
+	
+	private func navigateToFeeds() {
+		let feedsViewController: FeedsViewController = FeedsViewController(viewModel: FeedsViewModel())
+		
+		self.navigationController?.pushViewController(feedsViewController, animated: true)
 	}
 	
 	private func resetFields() {

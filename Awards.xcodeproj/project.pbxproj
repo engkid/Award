@@ -19,6 +19,13 @@
 		1E470D8B237996F2009BC075 /* SDWebImageMapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E470D88237996F2009BC075 /* SDWebImageMapKit.framework */; };
 		1E470D8C237996F2009BC075 /* SDWebImageMapKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1E470D88237996F2009BC075 /* SDWebImageMapKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		1E470D932379A2F7009BC075 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E470D922379A2F7009BC075 /* LoginViewModel.swift */; };
+		1E470D9B237A4BEB009BC075 /* FeedsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E470D99237A4BEB009BC075 /* FeedsViewController.swift */; };
+		1E470D9C237A4BEB009BC075 /* FeedsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1E470D9A237A4BEB009BC075 /* FeedsViewController.xib */; };
+		1E65F778237AEB6F001FD136 /* Device.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E65F777237AEB6F001FD136 /* Device.swift */; };
+		1E65F77C237AEDB8001FD136 /* FeedsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E65F77A237AEDB8001FD136 /* FeedsCollectionViewCell.swift */; };
+		1E65F77D237AEDB9001FD136 /* FeedsCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1E65F77B237AEDB8001FD136 /* FeedsCollectionViewCell.xib */; };
+		1E65F77F237B0434001FD136 /* FeedsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E65F77E237B0434001FD136 /* FeedsViewModel.swift */; };
+		1E65F782237B047E001FD136 /* FeedsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E65F781237B047E001FD136 /* FeedsModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -49,6 +56,13 @@
 		1E470D87237996F2009BC075 /* SDWebImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SDWebImage.framework; path = Carthage/Build/iOS/SDWebImage.framework; sourceTree = "<group>"; };
 		1E470D88237996F2009BC075 /* SDWebImageMapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SDWebImageMapKit.framework; path = Carthage/Build/iOS/SDWebImageMapKit.framework; sourceTree = "<group>"; };
 		1E470D922379A2F7009BC075 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		1E470D99237A4BEB009BC075 /* FeedsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedsViewController.swift; sourceTree = "<group>"; };
+		1E470D9A237A4BEB009BC075 /* FeedsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FeedsViewController.xib; sourceTree = "<group>"; };
+		1E65F777237AEB6F001FD136 /* Device.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Device.swift; sourceTree = "<group>"; };
+		1E65F77A237AEDB8001FD136 /* FeedsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedsCollectionViewCell.swift; sourceTree = "<group>"; };
+		1E65F77B237AEDB8001FD136 /* FeedsCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FeedsCollectionViewCell.xib; sourceTree = "<group>"; };
+		1E65F77E237B0434001FD136 /* FeedsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedsViewModel.swift; sourceTree = "<group>"; };
+		1E65F781237B047E001FD136 /* FeedsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedsModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +98,7 @@
 		1E470D69237980F7009BC075 /* Awards */ = {
 			isa = PBXGroup;
 			children = (
+				1E65F776237AEB52001FD136 /* Commons */,
 				1E470D8323798EE0009BC075 /* Controllers */,
 				1E470D8223798ED8009BC075 /* Extensions */,
 				1E470D6A237980F7009BC075 /* AppDelegate.swift */,
@@ -150,8 +165,46 @@
 		1E470D942379A719009BC075 /* Feeds */ = {
 			isa = PBXGroup;
 			children = (
+				1E65F783237B054A001FD136 /* ViewModels */,
+				1E65F780237B0469001FD136 /* FeedsModel */,
+				1E65F779237AED4E001FD136 /* FeedsCell */,
+				1E470D99237A4BEB009BC075 /* FeedsViewController.swift */,
+				1E470D9A237A4BEB009BC075 /* FeedsViewController.xib */,
 			);
 			path = Feeds;
+			sourceTree = "<group>";
+		};
+		1E65F776237AEB52001FD136 /* Commons */ = {
+			isa = PBXGroup;
+			children = (
+				1E65F777237AEB6F001FD136 /* Device.swift */,
+			);
+			path = Commons;
+			sourceTree = "<group>";
+		};
+		1E65F779237AED4E001FD136 /* FeedsCell */ = {
+			isa = PBXGroup;
+			children = (
+				1E65F77A237AEDB8001FD136 /* FeedsCollectionViewCell.swift */,
+				1E65F77B237AEDB8001FD136 /* FeedsCollectionViewCell.xib */,
+			);
+			path = FeedsCell;
+			sourceTree = "<group>";
+		};
+		1E65F780237B0469001FD136 /* FeedsModel */ = {
+			isa = PBXGroup;
+			children = (
+				1E65F781237B047E001FD136 /* FeedsModel.swift */,
+			);
+			path = FeedsModel;
+			sourceTree = "<group>";
+		};
+		1E65F783237B054A001FD136 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				1E65F77E237B0434001FD136 /* FeedsViewModel.swift */,
+			);
+			path = ViewModels;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -216,6 +269,8 @@
 			files = (
 				1E470D77237980F8009BC075 /* LaunchScreen.storyboard in Resources */,
 				1E470D74237980F8009BC075 /* Assets.xcassets in Resources */,
+				1E65F77D237AEDB9001FD136 /* FeedsCollectionViewCell.xib in Resources */,
+				1E470D9C237A4BEB009BC075 /* FeedsViewController.xib in Resources */,
 				1E470D8123798750009BC075 /* LoginViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -249,10 +304,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1E470D9B237A4BEB009BC075 /* FeedsViewController.swift in Sources */,
 				1E470D8023798750009BC075 /* LoginViewController.swift in Sources */,
 				1E470D6B237980F7009BC075 /* AppDelegate.swift in Sources */,
 				1E470D6D237980F7009BC075 /* SceneDelegate.swift in Sources */,
 				1E470D932379A2F7009BC075 /* LoginViewModel.swift in Sources */,
+				1E65F778237AEB6F001FD136 /* Device.swift in Sources */,
+				1E65F77C237AEDB8001FD136 /* FeedsCollectionViewCell.swift in Sources */,
+				1E65F782237B047E001FD136 /* FeedsModel.swift in Sources */,
+				1E65F77F237B0434001FD136 /* FeedsViewModel.swift in Sources */,
 				1E470D8523798F05009BC075 /* UIView+Constraints.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

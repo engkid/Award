@@ -1,6 +1,9 @@
 {
-  "commitish" : "1.0.0",
+  "commitish" : "ddde760011261655b465069a762f8e6210e39ad4",
   "iOS" : [
-
+    {
+      "name" : "Shimmer",
+      "hash" : "2323f449c8ffb08f2e55f5a25f6afa8f29e7db49b7ad961a46e84908cf0d5a08"
+    }
   ]
 }
