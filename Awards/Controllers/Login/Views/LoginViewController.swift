@@ -15,8 +15,10 @@ class LoginViewController: UIViewController {
 	@IBOutlet weak var logoImageView: UIImageView?
 	@IBOutlet weak var emailTextField: UITextField?
 	@IBOutlet weak var signInButton: UIButton?
+	@IBOutlet weak var loginErrorLabel: UILabel?
 	
 	private var viewModel: LoginViewModel?
+	private var hideErrorStatus: Bool = true
 	
 	private var loadingIndicator: UIActivityIndicatorView = {
 		
@@ -36,7 +38,6 @@ class LoginViewController: UIViewController {
 		
 		return blurEffectView
 	}()
-	
 	
 	override func viewDidLoad() {
 		super.viewDidLoad()
@@ -76,7 +77,7 @@ class LoginViewController: UIViewController {
 	
 	private func setupViews() {
 		
-		
+		loginErrorLabel?.isHidden = hideErrorStatus
 		logoImageView?.image = UIImage(named: "star")
 		
 		signInButton?.backgroundColor = UIColor.black
@@ -137,6 +138,8 @@ class LoginViewController: UIViewController {
 				
 			} else {
 				// TODO Engkit: unhide error validation message here
+				strongSelf.hideErrorStatus = !strongSelf.hideErrorStatus
+				strongSelf.loginErrorLabel?.isHidden = strongSelf.hideErrorStatus
 				strongSelf.resetFields()
 			}
 			

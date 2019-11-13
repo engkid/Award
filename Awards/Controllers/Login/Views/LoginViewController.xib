@@ -12,6 +12,7 @@
                 <outlet property="TitleLabel" destination="VKx-PJ-lcW" id="S3S-qW-lnj"/>
                 <outlet property="containerView" destination="AQn-xl-WWE" id="xSG-La-xnq"/>
                 <outlet property="emailTextField" destination="7hR-Dx-Pak" id="fP4-s4-UCh"/>
+                <outlet property="loginErrorLabel" destination="P0Z-3r-GKo" id="VMj-XM-jKy"/>
                 <outlet property="logoImageView" destination="zH4-vQ-JAQ" id="37s-ej-aDL"/>
                 <outlet property="signInButton" destination="97T-BL-nz4" id="xdB-Bc-7Oh"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="whq-MV-bfp"/>
@@ -72,6 +73,12 @@
                             <nil key="textColor"/>
                             <nil key="highlightedColor"/>
                         </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Wrong email" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P0Z-3r-GKo">
+                            <rect key="frame" x="159.5" y="616" width="95.5" height="21"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
                     </subviews>
                     <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                     <constraints>
@@ -82,8 +89,10 @@
                         <constraint firstItem="7hR-Dx-Pak" firstAttribute="top" secondItem="gxl-2V-9ko" secondAttribute="bottom" constant="8" id="IWF-pl-j6q"/>
                         <constraint firstItem="7hR-Dx-Pak" firstAttribute="centerX" secondItem="gxl-2V-9ko" secondAttribute="centerX" id="Iwj-IH-5vF"/>
                         <constraint firstItem="gxl-2V-9ko" firstAttribute="top" secondItem="VKx-PJ-lcW" secondAttribute="bottom" constant="-2" id="KAx-fR-kh0"/>
+                        <constraint firstItem="P0Z-3r-GKo" firstAttribute="top" secondItem="97T-BL-nz4" secondAttribute="bottom" constant="7.5" id="SVj-JX-Mfi"/>
                         <constraint firstItem="97T-BL-nz4" firstAttribute="top" secondItem="7hR-Dx-Pak" secondAttribute="bottom" constant="8" id="dAL-MA-etn"/>
                         <constraint firstItem="7hR-Dx-Pak" firstAttribute="leading" secondItem="AQn-xl-WWE" secondAttribute="leading" constant="42" id="hsA-8K-blo"/>
+                        <constraint firstItem="P0Z-3r-GKo" firstAttribute="centerX" secondItem="97T-BL-nz4" secondAttribute="centerX" id="kNV-dR-XJm"/>
                         <constraint firstItem="zH4-vQ-JAQ" firstAttribute="centerX" secondItem="AQn-xl-WWE" secondAttribute="centerX" id="oyH-Z5-Nfq"/>
                         <constraint firstItem="VKx-PJ-lcW" firstAttribute="top" secondItem="zH4-vQ-JAQ" secondAttribute="bottom" constant="28" id="px1-wB-aLL"/>
                         <constraint firstItem="97T-BL-nz4" firstAttribute="centerX" secondItem="zH4-vQ-JAQ" secondAttribute="centerX" id="r0O-Xn-fWr"/>

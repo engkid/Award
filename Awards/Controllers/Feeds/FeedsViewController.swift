@@ -15,6 +15,15 @@ class FeedsViewController: UIViewController {
 	
 	private var viewModel: FeedsViewModel?
 	
+	private let blurEffectView: UIVisualEffectView = {
+		let blurEffect: UIBlurEffect = UIBlurEffect(style: UIBlurEffect.Style.dark)
+		let blurEffectView = UIVisualEffectView(effect: blurEffect)
+		
+		blurEffectView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
+		
+		return blurEffectView
+	}()
+	
 	override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
 		super.init(nibName: "FeedsViewController", bundle: nil)
 	}
@@ -28,11 +37,15 @@ class FeedsViewController: UIViewController {
         super.viewDidLoad()
 
 		title = "Awards"
+		blurEffectView.frame = view.bounds
+		view.addSubview(blurEffectView)
 		setupCollectionView()
 		setupView()
     }
 	
 	private func setupView() {
+		
+		blurEffectView.isHidden = true
 		
 		navigationItem.hidesBackButton = true
 		
@@ -58,6 +71,7 @@ class FeedsViewController: UIViewController {
 		
 		let menu = SideMenuNavigationController(rootViewController: MenuViewController())
 		menu.leftSide = true
+		menu.blurEffectStyle = .dark
 		
 		self.present(menu, animated: true, completion: nil)
 		
@@ -78,6 +92,14 @@ class FeedsViewController: UIViewController {
 		feedsCollectionView?.register(UINib(nibName: "FeedsCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: "FeedsCollectionViewCell")
 	}
 
+	private func setBlurEffect(_ isHidden: Bool) {
+		blurEffectView.isHidden = isHidden
+	}
+	
+	private func setNavigationBar(_ isHidden: Bool) {
+		self.navigationController?.setNavigationBarHidden(isHidden, animated: false)
+	}
+	
 }
 
 extension FeedsViewController: UICollectionViewDataSource {
@@ -125,6 +147,18 @@ extension FeedsViewController: UICollectionViewDelegateFlowLayout {
 
 extension FeedsViewController: UICollectionViewDelegate {
 	
+}
+
+extension FeedsViewController: SideMenuNavigationControllerDelegate {
 	
+	func sideMenuWillAppear(menu: SideMenuNavigationController, animated: Bool) {
+		self.setBlurEffect(false)
+		self.setNavigationBar(true)
+	}
+	
+	func sideMenuWillDisappear(menu: SideMenuNavigationController, animated: Bool) {
+		self.setBlurEffect(true)
+		self.setNavigationBar(false)
+	}
 	
 }

@@ -94,11 +94,7 @@ extension MenuViewController: UITableViewDataSource {
 		default:
 			return UITableViewCell()
 		}
-		
-		
 	}
-	
-	
 }
 
 extension MenuViewController: UITableViewDelegate {
