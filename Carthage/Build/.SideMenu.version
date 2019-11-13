@@ -1,0 +1,10 @@
+{
+  "commitish" : "fb25017bc7238145c4d6405255c3aeaa7993b4c7",
+  "iOS" : [
+    {
+      "name" : "SideMenu",
+      "hash" : "d18126bd135f45df55d701f2dc6ca76be90f3c95278aafd636674828b15bbd3e",
+      "swiftToolchainVersion" : "5.1.2 (swiftlang-1100.0.278 clang-1100.0.33.9)"
+    }
+  ]
+}

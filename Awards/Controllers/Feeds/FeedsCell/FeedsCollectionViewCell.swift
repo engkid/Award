@@ -43,6 +43,11 @@ class FeedsCollectionViewCell: UICollectionViewCell {
 			
 			feedsButton?.setTitle("Products", for: .normal)
 			feedsButton?.backgroundColor = .orange
+			
+		case .giftcard:
+			
+			feedsButton?.setTitle("Giftcard", for: .normal)
+			feedsButton?.backgroundColor = .green
 		}
 		
 	}

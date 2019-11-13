@@ -1,2 +1,2 @@
 github "SDWebImage/SDWebImage" == 5.3.1
-github "facebook/Shimmer" "master"
+github "jonkykong/SideMenu" "master"

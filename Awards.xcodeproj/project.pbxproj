@@ -26,6 +26,16 @@
 		1E65F77D237AEDB9001FD136 /* FeedsCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1E65F77B237AEDB8001FD136 /* FeedsCollectionViewCell.xib */; };
 		1E65F77F237B0434001FD136 /* FeedsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E65F77E237B0434001FD136 /* FeedsViewModel.swift */; };
 		1E65F782237B047E001FD136 /* FeedsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E65F781237B047E001FD136 /* FeedsModel.swift */; };
+		1ED81861237C41AD00F3BEDD /* FilterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ED8185F237C41AD00F3BEDD /* FilterViewController.swift */; };
+		1ED81862237C41AD00F3BEDD /* FilterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1ED81860237C41AD00F3BEDD /* FilterViewController.xib */; };
+		1ED81865237C4F4D00F3BEDD /* SideMenu.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1ED81864237C4F4D00F3BEDD /* SideMenu.framework */; };
+		1ED81866237C4F4D00F3BEDD /* SideMenu.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1ED81864237C4F4D00F3BEDD /* SideMenu.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		1ED81869237C507A00F3BEDD /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ED81867237C507A00F3BEDD /* MenuViewController.swift */; };
+		1ED8186A237C507A00F3BEDD /* MenuViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1ED81868237C507A00F3BEDD /* MenuViewController.xib */; };
+		1ED8186E237C54CC00F3BEDD /* MenuTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ED8186C237C54CC00F3BEDD /* MenuTableViewCell.swift */; };
+		1ED8186F237C54CC00F3BEDD /* MenuTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1ED8186D237C54CC00F3BEDD /* MenuTableViewCell.xib */; };
+		1ED81872237C59A800F3BEDD /* HeaderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ED81870237C59A800F3BEDD /* HeaderTableViewCell.swift */; };
+		1ED81873237C59A800F3BEDD /* HeaderTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1ED81871237C59A800F3BEDD /* HeaderTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -35,6 +45,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				1ED81866237C4F4D00F3BEDD /* SideMenu.framework in Embed Frameworks */,
 				1E470D8C237996F2009BC075 /* SDWebImageMapKit.framework in Embed Frameworks */,
 				1E470D8A237996F2009BC075 /* SDWebImage.framework in Embed Frameworks */,
 			);
@@ -63,6 +74,15 @@
 		1E65F77B237AEDB8001FD136 /* FeedsCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FeedsCollectionViewCell.xib; sourceTree = "<group>"; };
 		1E65F77E237B0434001FD136 /* FeedsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedsViewModel.swift; sourceTree = "<group>"; };
 		1E65F781237B047E001FD136 /* FeedsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedsModel.swift; sourceTree = "<group>"; };
+		1ED8185F237C41AD00F3BEDD /* FilterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterViewController.swift; sourceTree = "<group>"; };
+		1ED81860237C41AD00F3BEDD /* FilterViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FilterViewController.xib; sourceTree = "<group>"; };
+		1ED81864237C4F4D00F3BEDD /* SideMenu.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SideMenu.framework; path = Carthage/Build/iOS/SideMenu.framework; sourceTree = "<group>"; };
+		1ED81867237C507A00F3BEDD /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
+		1ED81868237C507A00F3BEDD /* MenuViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MenuViewController.xib; sourceTree = "<group>"; };
+		1ED8186C237C54CC00F3BEDD /* MenuTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuTableViewCell.swift; sourceTree = "<group>"; };
+		1ED8186D237C54CC00F3BEDD /* MenuTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MenuTableViewCell.xib; sourceTree = "<group>"; };
+		1ED81870237C59A800F3BEDD /* HeaderTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderTableViewCell.swift; sourceTree = "<group>"; };
+		1ED81871237C59A800F3BEDD /* HeaderTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HeaderTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +90,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1ED81865237C4F4D00F3BEDD /* SideMenu.framework in Frameworks */,
 				1E470D8B237996F2009BC075 /* SDWebImageMapKit.framework in Frameworks */,
 				1E470D89237996F2009BC075 /* SDWebImage.framework in Frameworks */,
 			);
@@ -121,6 +142,8 @@
 		1E470D8323798EE0009BC075 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				1ED81863237C41B400F3BEDD /* Filter */,
+				1ED8185C237C3D3800F3BEDD /* SideMenu */,
 				1E470D942379A719009BC075 /* Feeds */,
 				1E470D8F2379A2D2009BC075 /* Login */,
 			);
@@ -130,6 +153,7 @@
 		1E470D86237996F2009BC075 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				1ED81864237C4F4D00F3BEDD /* SideMenu.framework */,
 				1E470D87237996F2009BC075 /* SDWebImage.framework */,
 				1E470D88237996F2009BC075 /* SDWebImageMapKit.framework */,
 			);
@@ -207,6 +231,36 @@
 			path = ViewModels;
 			sourceTree = "<group>";
 		};
+		1ED8185C237C3D3800F3BEDD /* SideMenu */ = {
+			isa = PBXGroup;
+			children = (
+				1ED8186B237C54AB00F3BEDD /* SideMenuCell */,
+				1ED81867237C507A00F3BEDD /* MenuViewController.swift */,
+				1ED81868237C507A00F3BEDD /* MenuViewController.xib */,
+			);
+			path = SideMenu;
+			sourceTree = "<group>";
+		};
+		1ED81863237C41B400F3BEDD /* Filter */ = {
+			isa = PBXGroup;
+			children = (
+				1ED8185F237C41AD00F3BEDD /* FilterViewController.swift */,
+				1ED81860237C41AD00F3BEDD /* FilterViewController.xib */,
+			);
+			path = Filter;
+			sourceTree = "<group>";
+		};
+		1ED8186B237C54AB00F3BEDD /* SideMenuCell */ = {
+			isa = PBXGroup;
+			children = (
+				1ED8186C237C54CC00F3BEDD /* MenuTableViewCell.swift */,
+				1ED8186D237C54CC00F3BEDD /* MenuTableViewCell.xib */,
+				1ED81870237C59A800F3BEDD /* HeaderTableViewCell.swift */,
+				1ED81871237C59A800F3BEDD /* HeaderTableViewCell.xib */,
+			);
+			path = SideMenuCell;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -268,9 +322,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				1E470D77237980F8009BC075 /* LaunchScreen.storyboard in Resources */,
+				1ED81873237C59A800F3BEDD /* HeaderTableViewCell.xib in Resources */,
 				1E470D74237980F8009BC075 /* Assets.xcassets in Resources */,
 				1E65F77D237AEDB9001FD136 /* FeedsCollectionViewCell.xib in Resources */,
 				1E470D9C237A4BEB009BC075 /* FeedsViewController.xib in Resources */,
+				1ED81862237C41AD00F3BEDD /* FilterViewController.xib in Resources */,
+				1ED8186A237C507A00F3BEDD /* MenuViewController.xib in Resources */,
+				1ED8186F237C54CC00F3BEDD /* MenuTableViewCell.xib in Resources */,
 				1E470D8123798750009BC075 /* LoginViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -288,6 +346,7 @@
 			inputPaths = (
 				"$(SRCROOT)/Carthage/Build/iOS/SDWebImage.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/SDWebImageMapKit.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/SideMenu.framework",
 			);
 			outputFileListPaths = (
 			);
@@ -309,8 +368,12 @@
 				1E470D6B237980F7009BC075 /* AppDelegate.swift in Sources */,
 				1E470D6D237980F7009BC075 /* SceneDelegate.swift in Sources */,
 				1E470D932379A2F7009BC075 /* LoginViewModel.swift in Sources */,
+				1ED81861237C41AD00F3BEDD /* FilterViewController.swift in Sources */,
+				1ED81869237C507A00F3BEDD /* MenuViewController.swift in Sources */,
 				1E65F778237AEB6F001FD136 /* Device.swift in Sources */,
 				1E65F77C237AEDB8001FD136 /* FeedsCollectionViewCell.swift in Sources */,
+				1ED8186E237C54CC00F3BEDD /* MenuTableViewCell.swift in Sources */,
+				1ED81872237C59A800F3BEDD /* HeaderTableViewCell.swift in Sources */,
 				1E65F782237B047E001FD136 /* FeedsModel.swift in Sources */,
 				1E65F77F237B0434001FD136 /* FeedsViewModel.swift in Sources */,
 				1E470D8523798F05009BC075 /* UIView+Constraints.swift in Sources */,

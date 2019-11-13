@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SideMenu
 
 class FeedsViewController: UIViewController {
 
@@ -55,9 +56,18 @@ class FeedsViewController: UIViewController {
 	
 	@objc private func profileButtonPressed() {
 		
+		let menu = SideMenuNavigationController(rootViewController: MenuViewController())
+		menu.leftSide = true
+		
+		self.present(menu, animated: true, completion: nil)
+		
 	}
 	
 	@objc private func filterButtonPressed() {
+		
+		let filterViewController: FilterViewController = FilterViewController()
+		
+		self.present(filterViewController, animated: true, completion: nil)
 		
 	}
 	
@@ -89,6 +99,11 @@ extension FeedsViewController: UICollectionViewDataSource {
 		if let feedsModel: FeedsModel = viewModel?.feeds[indexPath.row] {
 			cell.setContents(feedsModel)
 		}
+		
+		cell.layer.shadowOffset = CGSize(width: 0, height: 0)
+		cell.layer.shadowColor = UIColor.gray.cgColor
+		cell.layer.shadowOpacity = 0.3
+		cell.layer.cornerRadius = 8
 		
 		return cell
 	}

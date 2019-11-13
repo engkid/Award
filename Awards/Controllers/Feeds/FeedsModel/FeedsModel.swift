@@ -11,6 +11,7 @@ import Foundation
 enum FeedType {
 	case vouchers
 	case products
+	case giftcard
 }
 
 struct FeedsModel {
